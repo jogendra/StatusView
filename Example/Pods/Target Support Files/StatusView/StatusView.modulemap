@@ -1,0 +1,6 @@
+framework module StatusView {
+  umbrella header "StatusView-umbrella.h"
+
+  export *
+  module * { export * }
+}

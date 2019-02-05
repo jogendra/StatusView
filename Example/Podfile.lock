@@ -1,0 +1,16 @@
+PODS:
+  - StatusView (0.1.0)
+
+DEPENDENCIES:
+  - StatusView (from `../`)
+
+EXTERNAL SOURCES:
+  StatusView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  StatusView: 05620115c536452927f4a70bd533e25b71c40f28
+
+PODFILE CHECKSUM: 0468b8c9d1ec0fa5568cf4e4ffcca94dbeb668fb
+
+COCOAPODS: 1.5.3
