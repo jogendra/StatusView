@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		04B10BC1D85D89A3C7EDFA15 /* Pods_StatusView_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB62C915C742343777D1D86 /* Pods_StatusView_Example.framework */; };
+		40D48C7B2209C51A00654245 /* StatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D48C7A2209C51A00654245 /* StatusView.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -29,10 +30,11 @@
 
 /* Begin PBXFileReference section */
 		09309AAC7001472394EF95AA /* Pods-StatusView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StatusView_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-StatusView_Tests/Pods-StatusView_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		0C064E91590158D4ABC2401E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		0C064E91590158D4ABC2401E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		221B161A8430FCE08AEABEC8 /* Pods-StatusView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StatusView_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-StatusView_Example/Pods-StatusView_Example.release.xcconfig"; sourceTree = "<group>"; };
 		385617230ECD3BB4E63AA526 /* Pods-StatusView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StatusView_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StatusView_Tests/Pods-StatusView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		3F5C288100137EF83921826F /* Pods-StatusView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StatusView_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StatusView_Example/Pods-StatusView_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		40D48C7A2209C51A00654245 /* StatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusView.swift; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* StatusView_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StatusView_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -43,9 +45,9 @@
 		607FACE51AFB9204008FA782 /* StatusView_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StatusView_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		81312DC044328784087E7224 /* StatusView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = StatusView.podspec; path = ../StatusView.podspec; sourceTree = "<group>"; };
+		81312DC044328784087E7224 /* StatusView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = StatusView.podspec; path = ../StatusView.podspec; sourceTree = "<group>"; };
 		A9CB5776A567469B45C6A3DA /* Pods_StatusView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StatusView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C476E7BE1C500FC250F92055 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		C476E7BE1C500FC250F92055 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		FAB62C915C742343777D1D86 /* Pods_StatusView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StatusView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -69,6 +71,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		40D48C7C2209C66300654245 /* StatusView */ = {
+			isa = PBXGroup;
+			children = (
+				40D48C7A2209C51A00654245 /* StatusView.swift */,
+			);
+			name = StatusView;
+			sourceTree = "<group>";
+		};
 		4220D617A4A2E72826B82930 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +117,7 @@
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
+				40D48C7C2209C66300654245 /* StatusView */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
 			name = "Example for StatusView";
@@ -324,6 +335,7 @@
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				40D48C7B2209C51A00654245 /* StatusView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
