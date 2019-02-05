@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'StatusView_Example' do
+  pod 'StatusView', :path => '../'
+
+  target 'StatusView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
