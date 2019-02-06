@@ -12,11 +12,28 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var navigationController: UINavigationController?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+
+        let homeVC = ViewController()
+        let statusView = StatusView(isVisible: true, rootVC: homeVC)
+        setAppWitRootAs(vc: statusView)
         return true
+    }
+
+    func setAppWitRootAs(vc: UIViewController) {
+        navigationController = nil
+        navigationController = UINavigationController(rootViewController: vc)
+        navigationController?.navigationBar.barTintColor = UIColor.clear
+        navigationController?.navigationBar.tintColor = UIColor.white
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
+        navigationController?.isNavigationBarHidden = true
+
+        self.window!.rootViewController = navigationController
+        self.window!.makeKeyAndVisible()
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

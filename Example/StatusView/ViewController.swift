@@ -10,8 +10,9 @@ import UIKit
 
 class ViewController: UIViewController, StatusViewDelegate {
 
-    var statusView = StatusView()
-
+    func didTapStatusBarView() {
+        print("Status view tapped!")
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,16 +20,6 @@ class ViewController: UIViewController, StatusViewDelegate {
     }
 
     func setupStatusView() {
-        statusView = StatusView(frame: CGRect(x: 0, y: 0, width: 200, height: 40))
-        view.addSubview(statusView)
-        statusView.isVisible = true
-        statusView.titleText = "This will appear on the status view"
-        statusView.backgroundColor = .black
-        statusView.titleTextColor = .white
-    }
-
-    func didTapStatusView() {
-        print("Status view tapped!")
     }
 
 }
