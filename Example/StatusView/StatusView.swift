@@ -24,7 +24,8 @@ class StatusView: UIView {
     public var titleText: String = ""
     public var isVisible: Bool = true
 
-    init() {
+    override init(frame: CGRect) {
+        super.init(frame: frame)
         addTapGuestureToStatusView()
     }
 

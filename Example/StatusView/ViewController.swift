@@ -8,16 +8,27 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, StatusViewDelegate {
+
+    var statusView = StatusView()
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        setupStatusView()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func setupStatusView() {
+        statusView = StatusView(frame: CGRect(x: 0, y: 0, width: 200, height: 40))
+        view.addSubview(statusView)
+        statusView.isVisible = true
+        statusView.titleText = "This will appear on the status view"
+        statusView.backgroundColor = .black
+        statusView.titleTextColor = .white
+    }
+
+    func didTapStatusView() {
+        print("Status view tapped!")
     }
 
 }
