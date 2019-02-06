@@ -22,6 +22,7 @@ class StatusView: UIView {
     public var titleTextColor: UIColor = .white
     public var titleTextFontSize: CGFloat = 12
     public var titleText: String = ""
+    public var isVisible: Bool = true
 
     init() {
         addTapGuestureToStatusView()
@@ -65,6 +66,23 @@ class StatusView: UIView {
         self.backgroundColor = statusViewColor
         textLabel.text = text
         textLabel.textColor = textColor ?? titleTextColor
+    }
+
+    public func removeTextLabelAnimations() {
+        textLabel.layer.removeAllAnimations()
+    }
+
+    func setStatusViewFrame() {
+        var statusFrame = UIApplication.shared.statusBarFrame
+        if isVisible {
+            statusFrame.size.height += 32
+            addTextLabelAnimations()
+        }
+        else {
+            statusFrame.size.height -= 32
+            self.backgroundColor = UIColor.clear
+            removeTextLabelAnimations()
+        }
     }
 
 }
